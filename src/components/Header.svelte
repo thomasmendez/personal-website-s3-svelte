@@ -1,25 +1,19 @@
-<div class="navbar bg-zinc-500 text-neutral-content">
-    <div class="flex-1">
-      <a class="btn btn-ghost normal-case text-xl">Thomas A. Mendez</a>
-    </div>
-    <div class="flex-none">
-      <ul class="menu menu-horizontal px-1">
-        <li><a>About</a></li>
-        <li><a>Work</a></li>
-        <li><a>Skills &amp; Tools</a></li>
-        <li>
-          <details>
-            <summary>
-              Projects
-            </summary>
-            <ul class="text-zinc-500">
-              <li><a>Software Engineering</a></li>
-              <li><a>VR / AR</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><a>Resume</a></li>
-        <li><a>Storybook</a></li>
-      </ul>
+<div class="bg-zinc-500 text-neutral-content p-4 flex justify-between items-center">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-xl normal-case">Thomas A. Mendez</div>
+    <div class="space-x-4 flex items-center">
+      <button class="btn btn-ghost">About</button>
+      <button class="btn btn-ghost">Work</button>
+      <button class="btn btn-ghost">Skills & Tools</button>
+      <details class="relative group">
+        <summary class="btn btn-ghost">Projects</summary>
+        <ul class="text-zinc-500 absolute hidden space-y-2 group-hover:block bg-white shadow-lg p-2 rounded-lg">
+            <li><button class="btn btn-ghost">Software Engineering</button></li>
+            <li><button class="btn btn-ghost">VR / AR</button></li>
+          </ul>
+      </details>
+      <button class="btn btn-ghost">Resume</button>
+      <button class="btn btn-ghost">Storybook</button>
     </div>
   </div>
+</div>
